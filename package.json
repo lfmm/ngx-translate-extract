@@ -1,7 +1,7 @@
 {
-  "name": "@biesbjerg/ngx-translate-extract",
+  "name": "@lfmm/ngx-translate-extract",
   "version": "4.2.0",
-  "description": "Extract strings from projects using ngx-translate",
+  "description": "Extract strings from projects using ngx-translate (clone from @biesbjerg original)",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -17,6 +17,9 @@
     "clean": "rm -rf ./dist",
     "lint": "tslint --force './src/**/*.ts'",
     "test": "mocha -r ts-node/register tests/**/*.spec.ts"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "husky": {
     "hooks": {
@@ -38,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/biesbjerg/ngx-translate-extract.git"
+    "url": "https://github.com/lfmm/ngx-translate-extract.git"
   },
   "keywords": [
     "angular",
@@ -56,7 +59,7 @@
   "bugs": {
     "url": "https://github.com/biesbjerg/ngx-translate-extract/issues"
   },
-  "homepage": "https://github.com/biesbjerg/ngx-translate-extract",
+  "homepage": "https://github.com/lfmm/ngx-translate-extract",
   "engines": {
     "node": ">=8"
   },

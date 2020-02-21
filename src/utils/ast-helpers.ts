@@ -87,6 +87,9 @@ export function getStringsFromExpression(expression: Expression): string[] {
 	}
 
 	if (isArrayLiteralExpression(expression)) {
+		if (!expression || !expression.elements) {
+			return [];
+		} // return empty arr if no expressio
 		return expression.elements.reduce((result: string[], element: Expression) => {
 			const strings = getStringsFromExpression(element);
 			return [...result, ...strings];
